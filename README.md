@@ -40,7 +40,13 @@ Run the automatic downloader to fetch the speech-only zip file from Zenodo (~215
 python download_dataset.py
 ```
 
-### Step 3: Feature Extraction (MFCC)
+### Step 3: Run the full pipeline (optional)
+You can execute the full download, feature extraction, training, and evaluation pipeline in one command:
+```bash
+python run_pipeline.py
+```
+
+### Step 4: Feature Extraction (MFCC)
 Run feature extraction. This script:
 1. Filters files to only include target emotions (Neutral, Happy, Sad, Angry).
 2. Trims silence from the beginning and end of each file.
