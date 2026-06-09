@@ -1,0 +1,32 @@
+Slide 1 - Title
+"Welcome to this short presentation on Speech Emotion Recognition using MFCCs and a Convolutional Neural Network, trained on the RAVDESS dataset."
+
+Slide 2 - Problem
+"The goal is to classify spoken audio into four emotions: Neutral, Happy, Sad, and Angry. This can be useful for human-computer interaction, analytics, and accessibility applications."
+
+Slide 3 - Dataset
+"We use the RAVDESS dataset, which contains controlled emotional speech from multiple actors. We filtered to the four target emotions and standardized audio length to 3.5 seconds."
+
+Slide 4 - Features
+"We extract 40 Mel-Frequency Cepstral Coefficients (MFCCs) from each audio file. MFCCs capture the spectral envelope and are effective for speech tasks."
+
+Slide 5 - MFCC Example
+"Here's an example MFCC representation from a sample audio file. Each column is a frame and each row is an MFCC coefficient."
+
+Slide 6 - Model
+"We train a 2D Convolutional Neural Network on the MFCC inputs. The network includes convolutional layers, batch normalization, pooling, and dense layers, ending with a softmax for four classes."
+
+Slide 7 - Training
+"We used an 80/20 stratified split, StandardScaler for normalization, and early stopping with model checkpointing. Training history is shown here."
+
+Slide 8 - Results
+"Evaluation metrics include Accuracy, Precision, Recall, F1-score, and a confusion matrix. The model achieved approx 44% accuracy on the test split in this run."
+
+Slide 9 - Demo
+"In the deployed app you can upload a WAV file and the model will predict the emotion with class probabilities."
+
+Slide 10 - Next steps
+"To improve performance consider data augmentation, more training data, speaker-independent splits, and model tuning."
+
+Slide 11 - Credits
+"This project was built with Librosa, TensorFlow/Keras, Scikit-learn, and Streamlit. Thank you for watching."
